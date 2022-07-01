@@ -1,0 +1,108 @@
+.ul {
+  padding-inline-start: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.fontLight {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.cardContainer {
+  list-style-type: none;
+}
+
+.card {
+  padding: 15px 15px;
+  background-color: #fff;
+  border-color: #d0d7de;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  transition: 0.1s;
+  height: auto;
+}
+
+.card:hover {
+  box-shadow: 3px 4px 12px 0px #ff9cb046;
+}
+
+.cardNameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.cardIcon {
+  fill: rgb(87, 96, 106);
+  margin-right: 10px;
+}
+
+.cardName {
+  color: #4f5269;
+  font-size: 14px;
+}
+
+.cardDescripcion {
+  font-weight: 200;
+  color: rgb(87, 96, 106);
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+
+.cardLanguageColor {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(27,31,36,0.1);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.cardLanguageText {
+  font-weight: 200;
+  color: rgb(87, 96, 106);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mainBtns {
+    flex-direction: row;
+  }
+  .btnPrimary {
+    width: 200px;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .btnSecondary {
+    width: 258px;
+    justify-content: center;
+  }
+  .card {
+    /* height: 80px; */
+  }
+}
+
+@media only screen and (min-width:1054px) {
+  h1.h1, h2.h2, h3.h3 {
+    margin: 0.7rem 0;
+  }
+  .fontLight {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,63 @@
+.sectionCompanies {
+  text-align: center;
+}
+.companies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.companies a:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(253, 217, 235));
+  filter: drop-shadow(5px 5px 5px rgb(253, 217, 235));
+}
+.companies > .companyRow {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  row-gap: 24px;
+  column-gap: 50px;
+}
+.companies a {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+}
+.companySecondRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.fontLight {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media only screen and (min-width: 700px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .sectionCompanies {
+    margin-bottom: 70px;
+  }
+  .companyRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width:1054px) {
+  .container {
+    width: 1054px;
+  }
+  .fontLight {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}

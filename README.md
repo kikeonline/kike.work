@@ -1,20 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# kike.work profile website
 
 ## Features
 - 🔥 Next JS
 - 🛂 Strict TypeScript
 - 🚨 ESLint & Type-Check
-- 🐙 Octokit JS
+- 🐙 Octokit JS to fetch repos
+- 📄 Static export (No node server needed on delpoy)
 
-## Requirements
+## requirements
+1. Create .env file. Add your username in the `GITHUB_USERNAME` variable
 
-### Create .env file
+```bash
+cp .env.example .env.local
+````
 
-`cp .env.example .env.local`
-
-| KEY      | Description |
-| ----------- | ----------- |
-| GITHUB_KEY      | Your github personal access token to fetch your repos. |
+2. Add your Devs and Companies in `/libs/api.ts`
 
 ## Run development server
 
@@ -28,3 +28,7 @@ This is a static project, no node server is needed. Files will be exported to `_
 ```bash
 npm run export
 ```
+
+
+## Todo
+- 🌐 Add `next-i18next`

@@ -1,0 +1,137 @@
+.ul {
+  padding-inline-start: 0px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  /* scroll-behavior: smooth; */
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+
+.ul::-webkit-scrollbar {
+  height: 7px;
+}
+
+.ul::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.ul::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 10px;
+}
+
+.ul:hover::-webkit-scrollbar-thumb {
+  background-color: #FF4A6E;
+}
+
+.ul::-webkit-scrollbar-button {
+  background-color: #ffffff;
+  width: 0px;
+}
+
+.ul::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+.fontLight {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.cardContainer {
+  padding-right: 8px;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.card {
+  padding: 15px 15px;
+  background-color: #fff;
+  border-color: #d0d7de;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  height: 100%;
+  width: 300px;
+  scroll-snap-align: start;
+  transition: 0.1s;
+}
+
+.card:hover {
+  box-shadow: 3px 4px 12px 0px #ff9cb046;
+}
+
+.cardNameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.cardIcon {
+  fill: rgb(87, 96, 106);
+  margin-right: 10px;
+}
+
+.githubIcon {
+  fill: rgb(87, 96, 106);
+  margin-left: 10px;
+}
+
+.cardName {
+  color: #4f5269;
+  font-size: 14px;
+}
+
+.cardDescripcion {
+  font-weight: 200;
+  color: rgb(87, 96, 106);
+  font-size: 12px;
+  line-height: 18px;
+}
+.cardLanguageText {
+  font-weight: 200;
+  color: rgb(87, 96, 106);
+  font-size: 12px;
+  line-height: 18px;
+}
+.link {
+  text-decoration: none;
+  color: rgb(87, 96, 106);
+}
+.link:hover {
+  color: #FF4A6E !important;
+}
+.link:hover > svg {
+  fill: #FF4A6E !important;
+  color: #FF4A6E !important;
+}
+.link:visited {
+  color: rgb(87, 96, 106);
+}
+@media only screen and (min-width: 700px) {
+  .mainBtns {
+    flex-direction: row;
+  }
+  .btnPrimary {
+    width: 200px;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .btnSecondary {
+    width: 258px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width:1054px) {
+  h1.h1, h2.h2, h3.h3 {
+    margin: 0.7rem 0;
+  }
+  .fontLight {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+.cardLanguageColor {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(27,31,36,0.1);
+  border-radius: 50%;
+  margin-right: 5px;
+}
