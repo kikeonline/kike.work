@@ -28,37 +28,39 @@ h1.h1, h2.h2, h3.h3 {
   flex-direction: column;
 }
 .btnPrimary {
+  align-items: center;
   background: #FF4A6E;
   border-radius: 12px;
-  padding: 10px 30px;
   color: #fff;
-  text-decoration: none;
+  display: flex;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  margin-top: 10px;
-  display: flex;
   justify-content: left;
-  align-items: center;
+  margin-top: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
   transition: 0.1s;
+  height: 50px;
 }
 .btnPrimary:hover {
   background: #f61945;
 }
 .btnSecondary {
+  align-items: center;
+  border-radius: 12px;
   border: 1px solid #d0d7de;
   color: #4F5269;
-  border-radius: 12px;
-  padding: 10px 30px;
-  text-decoration: none;
+  display: flex;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  margin-top: 10px;
-  display: flex;
   justify-content: left;
-  align-items: center;
+  margin-top: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
   transition: 0.1s;
+  height: 50px;
 }
 .btnSecondary:hover {
   background: #FF4A6E;
