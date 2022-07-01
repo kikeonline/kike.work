@@ -1,4 +1,4 @@
-# kike.work profile website
+# kike.work developer profile website
 
 ## Features
 - 🔥 Next JS
@@ -28,7 +28,6 @@ This is a static project, no node server is needed. Files will be exported to `_
 ```bash
 npm run export
 ```
-
 
 ## Todo
 - 🌐 Add `next-i18next`
