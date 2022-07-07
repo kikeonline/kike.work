@@ -5,7 +5,7 @@
 - 🛂 Strict TypeScript
 - 🚨 ESLint & Type-Check
 - 🐙 Octokit JS to fetch repos
-- 📄 Static export (No node server needed on delpoy)
+- 📄 Static export (No node server needed to deploy)
 
 ## requirements
 1. Create .env file. Add your username in the `GITHUB_USERNAME` variable
