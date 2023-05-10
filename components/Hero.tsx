@@ -16,13 +16,13 @@ const Hero = () => {
           <span className={styles.fontLight}>Currently web developer at <strong>AffinityClick Inc.</strong></span>
         </h3>
         <div className={styles.mainBtns}>
-          <a target="_blank" className={styles.btnPrimary} href='/enriqueflores_cv_2022.pdf'>
+          <a target="_blank" className={styles.btnPrimary} href='/enriqueflores_cv_2023.pdf'>
             <picture style={{ marginRight: '8px' }}>
               <img src='svg/document.svg' width={15} height={18.52} alt="Download CV" />
             </picture>
             Download CV
           </a>
-          <a target="_blank" className={styles.btnSecondary} href='mailto:kikeoffline@gmail.com' rel="noreferrer">
+          <a target="_blank" className={styles.btnSecondary} href='mailto:enrique.flores.work@gmail.com' rel="noreferrer">
             <picture style={{ marginRight: '8px', marginTop: '4px' }}>
               <img src='svg/mail.svg' width={20} height={19} alt="Email me" />
             </picture>
