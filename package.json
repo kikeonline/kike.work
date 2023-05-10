@@ -10,7 +10,6 @@
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
-    "framer-motion": "^6.3.16",
     "next": "12.2.0",
     "octokit": "^1.8.1",
     "react": "18.2.0",

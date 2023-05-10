@@ -1,8 +1,5 @@
 import React, { useRef } from "react";
-import { motion } from "framer-motion"
 import styles from './devs.module.css'
-
-import { motionContainer, motionItem } from '../lib/constants'
 import DevType from "../types/dev";
 
 interface DevsProps {
@@ -11,13 +8,12 @@ interface DevsProps {
 
 const Devs = ({ devs }: DevsProps) => {
   return (
-    <motion.div variants={motionContainer} initial='hidden' animate='show' exit='exit'>
-      <motion.h2 className={styles.fontLight} variants={motionItem}>Awesome developers</motion.h2>
-      <motion.ul className={styles.ul}>
-
+    <div>
+      <h2 className={styles.fontLight}>Awesome developers</h2>
+      <ul className={styles.ul}>
         {devs.map(({ name, profesion, link }, index) => {
           return (
-            <motion.li key={index} className={styles.cardContainer} variants={motionItem}>
+            <li key={index} className={styles.cardContainer}>
               <a className={styles.a} href={link} target="_blank" rel="noreferrer">
                 <div className={styles.card}>
                   <span className={styles.cardNameContainer}>
@@ -29,11 +25,11 @@ const Devs = ({ devs }: DevsProps) => {
                   <p className={styles.cardDescripcion}>{profesion}</p>
                 </div>
               </a>
-            </motion.li>
+            </li>
           )
         })}
-      </motion.ul>
-    </motion.div>
+      </ul>
+    </div>
   );
 };
 

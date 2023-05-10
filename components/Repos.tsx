@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
-import { motion } from "framer-motion"
 import styles from './repos.module.css'
 
 import RepoType from "../types/repo";
 import useDraggableScroll from 'use-draggable-scroll';
-import { motionContainer, motionItem } from '../lib/constants'
 import Language from "./Language";
 
 interface ReposProps {
@@ -17,8 +15,8 @@ const Repos = ({ repos }: ReposProps) => {
   const { onMouseDown } = useDraggableScroll(ref, { direction: 'horizontal' });
 
   return (
-    <motion.div onMouseDown={onMouseDown} variants={motionContainer} initial='hidden' animate='show' exit='exit'>
-      <motion.h2 className={styles.fontLight} variants={motionItem}>
+    <div onMouseDown={onMouseDown}>
+      <h2 className={styles.fontLight}>
         <a href="https://github.com/kikeonline" target="_blank" style={{textDecoration: 'none'}} className={styles.link} rel="noreferrer">
           My Github
           <picture>
@@ -27,14 +25,14 @@ const Repos = ({ repos }: ReposProps) => {
             </svg>
           </picture>
         </a>
-      </motion.h2>
-      <motion.ul className={styles.ul} ref={ref} variants={motionItem}>
+      </h2>
+      <ul className={styles.ul} ref={ref}>
 
         {repos.map(({ id, name, description, language, fork }) => {
           // Forked repos are not shown
           if (fork === false) {
             return (
-              <motion.li key={id} className={styles.cardContainer} variants={motionItem}>
+              <li key={id} className={styles.cardContainer}>
                 <div className={styles.card}>
                   <span className={styles.cardNameContainer}>
                     <svg className={styles.cardIcon} aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
@@ -47,13 +45,12 @@ const Repos = ({ repos }: ReposProps) => {
                     <Language language={language} />
                   </span>
                 </div>
-              </motion.li>
+              </li>
             )
           }
-
         })}
-      </motion.ul>
-    </motion.div>
+      </ul>
+    </div>
   );
 };
 
